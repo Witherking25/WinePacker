@@ -11,6 +11,7 @@ set(REQUIRED_LIBS Core Gui Widgets)
 set(REQUIRED_LIBS_QUALIFIED Qt5::Core Qt5::Gui Qt5::Widgets)
 
 file(GLOB_RECURSE SOURCES "src/*.cpp" "src/*.h" "src/*.ui")
+file(GLOB_RECURSE RESOURCES "res/*")
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 

@@ -1,0 +1,16 @@
+[Desktop Entry]
+Name=WinePacker
+Exec=WinePacker
+Icon=winepacker
+Type=Application
+Categories=Game
+StartupNotify=true
+X-AppImage-Title=
+X-AppImage-Version=
+X-AppImage-Release=
+X-AppImage-URL=
+X-AppImage-Developer=
+X-AppImage-Licenses=
+X-AppImage-ID=
+X-AppImage-SourcePackages=
+X-AppImage-Tags=
