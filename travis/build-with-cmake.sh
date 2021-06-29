@@ -47,8 +47,9 @@ chmod +x linuxdeploy*.AppImage
 # make sure Qt plugin finds QML sources so it can deploy the imported files
 export QML_SOURCES_PATHS="$REPO_ROOT"/src
 
+export VERSION=a1.0.0
 # initialize AppDir, bundle shared libraries for QtQuickApp, use Qt plugin to bundle additional resources, and build AppImage, all in one single command
 ./linuxdeploy-x86_64.AppImage --appdir AppDir --plugin qt --output appimage
 
 # move built AppImage back into original CWD
-mv QtQuickApp*.AppImage "$OLD_CWD"
+mv *.AppImage "$OLD_CWD"
