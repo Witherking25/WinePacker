@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>winepacker::MainWindow</class>
+ <widget class="QWizard" name="winepacker::MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>519</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>WinePacker</string>
+  </property>
+  <property name="sizeGripEnabled">
+   <bool>true</bool>
+  </property>
+  <property name="modal">
+   <bool>false</bool>
+  </property>
+  <property name="wizardStyle">
+   <enum>QWizard::ModernStyle</enum>
+  </property>
+  <property name="titleFormat">
+   <enum>Qt::AutoText</enum>
+  </property>
+  <widget class="QWizardPage" name="welcomePage">
+   <property name="title">
+    <string>Welcome</string>
+   </property>
+   <property name="subTitle">
+    <string>This wizard will walk you through the process of packing your windows application in an AppImage using wine</string>
+   </property>
+   <attribute name="pageId">
+    <string notr="true">1</string>
+   </attribute>
+  </widget>
+  <widget class="QWizardPage" name="dataPage">
+   <property name="title">
+    <string>Data Entry</string>
+   </property>
+   <property name="subTitle">
+    <string>Please enter the relevant information required for packaging your program</string>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="typeSelectHorizontalLayout">
+      <item>
+       <widget class="QLabel" name="typeSelectLabel">
+        <property name="text">
+         <string>Executable Type</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="typeSelectComboBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <item>
+         <property name="text">
+          <string>Installer</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Standalone</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="exeSelectHorizontalLayout">
+      <item>
+       <widget class="QLabel" name="exeSelectLabel">
+        <property name="text">
+         <string>Executable Location</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="exeSelectLineEdit"/>
+      </item>
+      <item>
+       <widget class="QToolButton" name="exeSelectToolButton">
+        <property name="text">
+         <string>...</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWizardPage" name="installPage">
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="1">
+     <widget class="QPushButton" name="installButton">
+      <property name="text">
+       <string>Install</string>
+      </property>
+      <property name="checkable">
+       <bool>false</bool>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
